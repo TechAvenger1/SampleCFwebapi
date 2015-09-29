@@ -1,6 +1,8 @@
----
 applications:
 - name: sample-aspnet5-helloworld
+  stack: cflinuxfs2
   random-route: true
   memory: 256M
-  buildpack: https://github.com/cloudfoundry-community/asp.net5-buildpack
+  buildpack: https://github.com/cloudfoundry-community/asp.net5-buildpack.git
+  instances: 1
+
